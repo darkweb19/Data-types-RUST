@@ -31,9 +31,20 @@ fn main() {
     let wrapped_add :u8 = random_number().wrapping_add(56) ;
 
     println!("With Wrapping method {wrapped_add}");
+    tupple()
 }
 
 
 fn random_number() -> u8 {
  200
+}
+
+
+//this function  helps to understand tupple
+fn tupple() {
+    let sujan: (&str, i32, f64) = ("Sujan" , 23 , 3.9 );
+    //destructure it ,
+    let (name , age , gpa) = sujan ;
+
+    println!("My name is {name} , I am {age} years old and my GPA is {gpa} ")
 }
